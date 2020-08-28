@@ -13,22 +13,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: "https://app.snipcart.com" },
+      { rel: 'preconnect', href: "https://cdn.snipcart.com" },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900' },
-      { rel: 'stylesheet', href: 'https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.css' }
+      { rel: 'stylesheet', href: 'https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.css' }
     ],
     script: [
-      // jQuery. Only needed for snipcart
-      {
-        src: "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"
-      },
       // Snipcart js
       {
-        src: "https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.js",
-        id: "snipcart",
-        "data-autopop": "false",
-        // Change me. Read more at http://snipcart.com
-        "data-api-key":
-          "ZGU1MWUxMjYtY2RmYi00MGUxLWE5NTQtMWM1NzFhODhhYzhhNjM3MzQxNzE1NzE3NTg5NDg4"
+        src: "https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.js"
       }
     ]
   },
@@ -43,13 +36,17 @@ export default {
   */
   css: [
     '@/assets/css/resetr.css',
-    '@/assets/css/common.css'
+    '@/assets/css/common.css',
+    '@/assets/css/style.css',
+    '@/assets/css/snipcart-style.css'
   ],
 
   /*
-  ** Plugins to load before mounting the App
+  ** Load imgix vue plugin
   */
-  plugins: [
+  plugins: ['~/plugins/vue-imgix.js'],
+  buildModules: [
+    '@nuxtjs/tailwindcss',
   ],
 
   /*
@@ -62,9 +59,12 @@ export default {
     // https://prismic-nuxt.js.org/
     '@nuxtjs/prismic'
   ],
+  env: {
+    storeUrl: process.env.STORE_URL ||"http://localhost:3000"
+  },
 
   prismic: {
-    endpoint: 'https://your-repo-name.cdn.prismic.io/api/v2',
+    endpoint: 'https://tdecomm1.cdn.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
   },
