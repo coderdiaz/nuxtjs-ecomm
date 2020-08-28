@@ -1,41 +1,54 @@
-# Prismic Nuxt.js Example Blog
+# Prismic Nuxt.js SnipCart Example eComm Site with Responsive Images
 
-> [Nuxt.js](https://nuxtjs.org) example blog project with content managed in [Prismic](https://prismic.io)
+> [Nuxt.js](https://nuxtjs.org) example eComm project with content managed in [Prismic](https://prismic.io) and [Snipcart](https://snipcart.com)
 
-## Check out our article for a step by step guide to getting this project up and running
+## An Article is currently in the works...
 
-> [Prismic project guide](https://user-guides.prismic.io/examples/nuxt-js-samples/create-a-sample-blog-with-prismic-and-nuxt)
+> to be added..
 
 
-## Launch this project in your local environment
+## Install Items
 
-Run the following commands:
+Run the following command to install the prismic client (you might need to add sudo):
 
-``` bash
-npm install
-npm run dev
+``` npm install -g prismic-cli
 ```
+Then you can clone this theme and initiate the prismic project:
+
+```prismic theme --theme-url https://github.com/daletom/nuxtjs-ecomm.git --conf nuxt.config.js
+```
+
+Next you will need to login to your Prismic Account.  Create a layout and a few products.  Once this is complete, return to your terminal to launch your nuxt front end:
+
+```npm run dev```
+
 Then you can access it at [http://localhost:3000](http://localhost:3000).
+
+## Items of Note in this Theme
+
+Info about responsive images from [imgix](https://www.imgix.com)
+Talking about Snipcart..
+Tailwind CSS
 
 ## Launching the project in production
 
-Run the following commands to compile and minify the project and launch the server for production:
+Instructions coming...
 
-``` bash
-npm run build
-npm start
-```
+## Learn more
 
-## Learn more about using Prismic with Nuxt.js
+..
 
-> [Prismic Nuxt.js Documentation](https://prismic.io/docs/vuejs/getting-started/prismic-nuxt)
+## Credit
+Credit goes to many poeple and the articles they have written for helping and giving insight. Phil Snow from Prismic, Maxime Laboissonniere at Snipcart, and many other folks.
 
 ## License
 
-This software is licensed under the Apache 2 license, quoted below.
+The MIT License (MIT)
 
-Copyright 2013-2019 Prismic (http://prismic.io).
+Copyright (c) 2020 Thomas Dale
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
