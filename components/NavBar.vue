@@ -1,7 +1,8 @@
 <template>
   <div class="flex justify-between ml-6 mr-6 mt-4">
     <nuxt-link to="/">
-      <p>{{ $prismic.asText(headerData.data.title) }}</p>
+      {{ $prismic.asText(headerData.data.title) }}
+      <img :src="headerData.data.hero.url" width="100" />
     </nuxt-link>
 
     <button class="snipcart-checkout flex items-center">
@@ -17,22 +18,14 @@ export default {
     components: {
         Cart
     },
+    data: function() {
+    return {
+      headerData: {}
+    };
+    },
     async fetch() {
     this.headerData = await this.$prismic.api.getSingle('layout')
   },
-    /*async asyncData({ $prismic, error }) {
-    try{
-      // Query to get blog home content
-      const homepageContent = (await $prismic.api.getSingle('layout')).data
-      // Returns data to be used in template
-      return {
-        homepageContent,
-      }
-    } catch (e) {
-      // Returns error page
-      error({ statusCode: 404, message: 'Page not found' })
-    }
-  }*/
 }
 </script>
 
