@@ -14,11 +14,15 @@
           </div>
           <button
             class="snipcart-add-item mt-4 bg-white border border-gray-200 d hover:shadow-lg text-gray-700 font-semibold py-2 px-4 rounded shadow"
-            :data-item-name="document.title"
+            :data-item-name="$prismic.asText(document.title)"
             :data-item-price="document.price"
-            :data-item-id="document.uid"
-            :data-item-url="`${storeUrl}${this.$route.fullPath}`"
-            :data-item-description="document.description">
+            :data-item-id="document"
+            :data-item-url="$route.Path"
+            :data-item-description="$prismic.asText(document.description)"
+            :data-item-image="document.image.url"
+            :data-item-snipcartDescription="document.snipcartDescription"
+            :data-item-snipcartWeight="document.snipcartWeight"
+            :data-item-snipcartMaxQuantity="document.snipcartMaxQuantity">
             ${{ document.price }}.00
           </button>
         </div>
@@ -59,17 +63,7 @@ export default {
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' })
     }
-  }/*,
-  computed: {
-    customFields(){
-      return this.document["Custom_field"]
-        .map(({title, required, options}) => ({name: title, required, options}))
-        .map((x, index) => Object.entries(x)
-          .map(([key, value]) => ({[`data-item-custom${index + 1}-${key.toString().toLowerCase()}`]: value})))
-        .reduce((acc, curr) => acc.concat(curr), [])
-        .reduce((acc, curr) => ({...acc, ...curr}))
-    }
-  }*/
+  }
 }
 </script>
 
