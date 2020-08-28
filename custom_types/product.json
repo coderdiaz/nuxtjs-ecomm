@@ -42,8 +42,17 @@
       "fieldset" : "Product Image",
       "config" : {
         "constraint" : {
-          "width" : auto
-        }]
+          "width" : 640
+        },
+        "thumbnails" : [ {
+          "name" : "Listing",
+          "width" : 300,
+          "height" : 300
+        }, {
+          "name" : "Snipcart",
+          "width" : 50,
+          "height" : 50
+        } ]
       }
     },
     "price" : {
