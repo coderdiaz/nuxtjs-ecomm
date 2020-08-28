@@ -1,18 +1,32 @@
 <template>
   <nuxt-link :to="link">
-    <div class="blog-post">
-      <h2>{{ $prismic.asText(product.data.title) }}</h2>
-      <p class="blog-post-meta"><span class="created-at">{{ formattedDate }}</span></p>
-      <p>{{getFirstParagraph(product)}}</p>
+    <div class="rounded-t-lg bg-white pt-2 pb-2" v-if="product.data.image.url !== undefined">
+      <ResponsiveImg :imgobject="product.data.image" :sizes="imgsize" class="crop mx-auto"/> 
+    </div>
+    <div class="pl-4 pr-4 pb-4 pt-4 rounded-lg">
+      <h4 class="mt-1 font-semibold text-base leading-tight truncate text-gray-700">
+        {{ $prismic.asText(product.data.title) }}
+      </h4>
+      <div class="mt-1 text-sm text-gray-700">{{ $prismic.asText(product.data.description) }}</div>
     </div>
   </nuxt-link>
 </template>
 
 <script>
 import LinkResolver from "~/plugins/link-resolver.js"
+import ResponsiveImg from '~/components/ResponsiveImage.vue'
 
 export default {
-  props: ['product'],
+  props: {
+    product: {
+      type: Object,
+      default: null
+    },
+    imgsize: {
+      type: String,
+      default: '100vw'
+    }
+  },
   data: function() {
     return {
       link: '',
@@ -20,34 +34,8 @@ export default {
     }
   },
   name: 'product-widget',
-  methods: {
-    // Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
-    getFirstParagraph (product) {
-      const textLimit = 300;
-      const slices = product.data.body;
-      let firstParagraph = '';
-      let haveFirstParagraph = false;
-
-      slices.map(function(slice) {
-        if (!haveFirstParagraph && slice.slice_type == "text") {
-          slice.primary.text.forEach(function(block){
-            if (block.type == "paragraph" && !haveFirstParagraph) {
-              firstParagraph += block.text;
-              haveFirstParagraph = true;
-            }
-          });
-        }
-      });
-      
-      const limitedText = firstParagraph.substr(0, textLimit)
-
-      if (firstParagraph.length > textLimit) {
-        return limitedText.substr(0, limitedText.lastIndexOf(' ')) + '...';
-      }
-      else {
-        return firstParagraph;
-      }
-    },
+  components:{
+    ResponsiveImg
   },
   created () {
     this.link = LinkResolver(this.product),
@@ -56,10 +44,9 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-.blog-post
-  color: #353535
-
-h2
-  margin: 0
+<style scoped>
+.crop {
+  width: 240px;
+  height: auto;
+}
 </style>
