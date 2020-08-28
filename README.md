@@ -11,16 +11,20 @@
 
 Run the following command to install the prismic client (you might need to add sudo):
 
-``` npm install -g prismic-cli
+``` 
+npm install -g prismic-cli
 ```
 Then you can clone this theme and initiate the prismic project:
 
-```prismic theme --theme-url https://github.com/daletom/nuxtjs-ecomm.git --conf nuxt.config.js
+```
+prismic theme --theme-url https://github.com/daletom/nuxtjs-ecomm.git --conf nuxt.config.js
 ```
 
 Next you will need to login to your Prismic Account.  Create a layout and a few products.  Once this is complete, return to your terminal to launch your nuxt front end:
 
-```npm run dev```
+```
+npm run dev
+```
 
 Then you can access it at [http://localhost:3000](http://localhost:3000).
 
