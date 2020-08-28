@@ -15,7 +15,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: "https://app.snipcart.com" },
       { rel: 'preconnect', href: "https://cdn.snipcart.com" },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900' },
       { rel: 'stylesheet', href: 'https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.css' }
     ],
     script: [
@@ -35,10 +34,6 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/resetr.css',
-    '@/assets/css/common.css',
-    '@/assets/css/style.css',
-    '@/assets/css/snipcart-style.css'
   ],
 
   /*
