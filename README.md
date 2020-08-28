@@ -43,7 +43,7 @@ Instructions coming...
 ..
 
 ## Credit
-Credit goes to many poeple and the articles they have written for helping and giving insight. Phil Snow from Prismic, Maxime Laboissonniere at Snipcart, and many other folks.
+Credit goes to many poeple and the articles they have written for helping and giving insight. Phil Snow, Edouard Habered, & Renaud Bressand from Prismic, as well as Maxime Laboissonniere at Snipcart, and many other folks.
 
 ## License
 
