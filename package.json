@@ -1,9 +1,9 @@
 {
-  "name": "blog-nuxt",
+  "name": "nuxtjs-ecomm",
   "version": "1.0.0",
-  "description": "A simple blog for Nuxt and Vue",
-  "author": "Phil Snow",
-  "private": true,
+  "description": "A simple eComm site built with Nuxt, Prismic, Snipcart",
+  "author": "Tom Dale",
+  "private": false,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -15,12 +15,14 @@
     "@nuxtjs/prismic": "^1.1.0",
     "cookies": "^0.8.0",
     "cross-env": "^5.2.1",
-    "nuxt": "^2.11.0",
+    "nuxt": "^2.14.4",
     "prismic-javascript": "^2.1.5",
-    "prismic-vue": "^2.0.0"
+    "prismic-vue": "^2.0.0",
+    "vue-imgix": "^2.8.1"
   },
   "devDependencies": {
-    "node-sass": "^4.13.1",
+    "@nuxtjs/tailwindcss": "^3.0.2",
+    "node-sass": "^4.14.1",
     "nodemon": "^1.19.4",
     "sass-loader": "^7.3.1",
     "webpack": "^4.41.6"
