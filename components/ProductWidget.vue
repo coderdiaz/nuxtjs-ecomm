@@ -1,7 +1,7 @@
 <template>
   <nuxt-link :to="link">
     <div class="rounded-t-lg bg-white pt-2 pb-2" v-if="product.data.image.url !== undefined">
-      <ResponsiveImg :imgobject="product.data.image" :sizes="imgsize" class="crop mx-auto"/> 
+      <ProductImg :imgobject="product.data.image" class="crop mx-auto"/> 
     </div>
     <div class="pl-4 pr-4 pb-4 pt-4 rounded-lg">
       <h4 class="mt-1 font-semibold text-base leading-tight truncate text-gray-700">
@@ -14,17 +14,13 @@
 
 <script>
 import LinkResolver from "~/plugins/link-resolver.js"
-import ResponsiveImg from '~/components/ResponsiveImage.vue'
+import ProductImg from '~/components/ProductImage.vue'
 
 export default {
   props: {
     product: {
       type: Object,
       default: null
-    },
-    imgsize: {
-      type: String,
-      default: '100vw'
     }
   },
   data: function() {
@@ -35,7 +31,7 @@ export default {
   },
   name: 'product-widget',
   components:{
-    ResponsiveImg
+    ProductImg
   },
   created () {
     this.link = LinkResolver(this.product),
@@ -46,7 +42,7 @@ export default {
 
 <style scoped>
 .crop {
-  width: 240px;
-  height: auto;
+  width: 380px;
+  height: 380px;
 }
 </style>
