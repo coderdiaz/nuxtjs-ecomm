@@ -1,9 +1,9 @@
 <template>
   <nuxt-link :to="link">
     <div class="blog-post">
-      <h2>{{ $prismic.asText(post.data.title) }}</h2>
+      <h2>{{ $prismic.asText(product.data.title) }}</h2>
       <p class="blog-post-meta"><span class="created-at">{{ formattedDate }}</span></p>
-      <p>{{getFirstParagraph(post)}}</p>
+      <p>{{getFirstParagraph(product)}}</p>
     </div>
   </nuxt-link>
 </template>
@@ -12,19 +12,19 @@
 import LinkResolver from "~/plugins/link-resolver.js"
 
 export default {
-  props: ['post'],
+  props: ['product'],
   data: function() {
     return {
       link: '',
       formattedDate: '',
     }
   },
-  name: 'blog-widget',
+  name: 'product-widget',
   methods: {
     // Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
-    getFirstParagraph (post) {
+    getFirstParagraph (product) {
       const textLimit = 300;
-      const slices = post.data.body;
+      const slices = product.data.body;
       let firstParagraph = '';
       let haveFirstParagraph = false;
 
@@ -50,8 +50,8 @@ export default {
     },
   },
   created () {
-    this.link = LinkResolver(this.post),
-    this.formattedDate = Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(this.post.data.date))
+    this.link = LinkResolver(this.product),
+    this.formattedDate = Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(this.product.data.date))
   },
 }
 </script>

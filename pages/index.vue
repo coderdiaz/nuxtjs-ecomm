@@ -14,7 +14,7 @@
         <!-- Template for blog posts -->
         <section v-for="post in posts" :key="post.id" v-bind:post="post" class="blog-post">
           <!-- Here :post="post" passes the data to the component -->
-          <blog-widget :post="post"></blog-widget>
+          <product-widget :post="post"></product-widget>
         </section>
       </div>
       <!-- If no blog posts return message -->

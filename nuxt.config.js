@@ -5,16 +5,31 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Prismic + Nuxt Blog example',
+    title: 'Prismic + Nuxt + Snipcart eComm example',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Prismic + Nuxt Blog example' }
+      { hid: 'description', name: 'description', content: 'Prismic + Nuxt + Snipcart eComm example' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900' },
       { rel: 'stylesheet', href: 'https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.css' }
+    ],
+    script: [
+      // jQuery. Only needed for snipcart
+      {
+        src: "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"
+      },
+      // Snipcart js
+      {
+        src: "https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.js",
+        id: "snipcart",
+        "data-autopop": "false",
+        // Change me. Read more at http://snipcart.com
+        "data-api-key":
+          "ZGU1MWUxMjYtY2RmYi00MGUxLWE5NTQtMWM1NzFhODhhYzhhNjM3MzQxNzE1NzE3NTg5NDg4"
+      }
     ]
   },
 
