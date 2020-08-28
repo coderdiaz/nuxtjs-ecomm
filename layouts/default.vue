@@ -14,7 +14,7 @@ export default {
   },
   head () {
     return {
-      title: 'Prismic Nuxt.js Blog',
+      title: 'Prismic Nuxt.js Snipcart eComm Site',
     }
   }
 }
