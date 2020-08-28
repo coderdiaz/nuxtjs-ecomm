@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between ml-6 mr-6 mt-4">
     <nuxt-link to="/">
-      <p>Your exciting Logo</p>
+      <p>{{ $prismic.asText(headerData.data.title) }}</p>
     </nuxt-link>
 
     <button class="snipcart-checkout flex items-center">
@@ -17,7 +17,10 @@ export default {
     components: {
         Cart
     },
-    async asyncData({ $prismic, error }) {
+    async fetch() {
+    this.headerData = await this.$prismic.api.getSingle('layout')
+  },
+    /*async asyncData({ $prismic, error }) {
     try{
       // Query to get blog home content
       const homepageContent = (await $prismic.api.getSingle('layout')).data
@@ -29,7 +32,7 @@ export default {
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' })
     }
-  }
+  }*/
 }
 </script>
 
