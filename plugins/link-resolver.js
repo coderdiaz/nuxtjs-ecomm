@@ -7,12 +7,12 @@ export default function (doc) {
     return '/not-found'
   }
 
-  if (doc.type === 'blog_home') {
+  if (doc.type === 'layout') {
     return '/'
   }
 
-  if (doc.type === 'post') {
-    return '/blog/' + doc.uid
+  if (doc.type === 'product') {
+    return '/product/' + doc.uid
   }
 
   return '/not-found'
