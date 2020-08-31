@@ -39,21 +39,7 @@
   "Product Info" : {
     "image" : {
       "type" : "Image",
-      "fieldset" : "Product Image",
-      "config" : {
-        "constraint" : {
-          "width" : 640
-        },
-        "thumbnails" : [ {
-          "name" : "Listing",
-          "width" : 300,
-          "height" : 300
-        }, {
-          "name" : "Snipcart",
-          "width" : 50,
-          "height" : 50
-        } ]
-      }
+      "fieldset" : "Product Image"
     },
     "price" : {
       "type" : "Number",
