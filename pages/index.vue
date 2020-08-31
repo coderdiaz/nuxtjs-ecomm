@@ -41,7 +41,7 @@ export default {
       return {
         homepageContent,
         products: productItems.results,
-        hero: homepageContent.hero.url,
+        hero: homepageContent.logo.url,
       }
     } catch (e) {
       // Returns error page
