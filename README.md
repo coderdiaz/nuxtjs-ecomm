@@ -22,7 +22,10 @@ prismic theme --theme-url https://github.com/daletom/nuxtjs-ecomm.git --conf nux
 
 ## Create Content & Add Snipcart
 
-Next you will need to login to your Prismic Account.  Create a layout and a few products.  Once this is complete, you will need to login or create a free account at [Snipcart](https://snipcart.com).  No need to setup anything else, simply click on your account at the top right and go to API Keys.  You need to copy the Public Test API Key.  Now open the project folder we created when you configured the above Prismic theme.  Go to your layouts folder and the default.vue file.  Paste this API key  with an editor.  You will need to replace {your-api-key} with the snipcart API key, it will be in the hidden snipcart div that looks like this:
+Next you will need to login to your Prismic Account.  Create a layout and a few products.  
+![Upload Example](https://tom.imgix.net/addProduct.gif)
+
+Once this is complete, you will need to login or create a free account at [Snipcart](https://snipcart.com).  No need to setup anything else, simply click on your account at the top right and go to API Keys.  You need to copy the Public Test API Key.  Now open the project folder we created when you configured the above Prismic theme.  Go to your layouts folder and the default.vue file.  Paste this API key  with an editor.  You will need to replace {your-api-key} with the snipcart API key, it will be in the hidden snipcart div that looks like this:
 
 ```
 <div hidden id="snipcart" data-api-key="{your-api-key}"></div>
