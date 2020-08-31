@@ -9,7 +9,12 @@
     },
     "logo" : {
       "type" : "Image",
-      "fieldset" : "Site Logo"
+      "fieldset" : "Site Logo",
+      "config" : {
+        "constraint" : {
+          "width" : 180
+        }
+      }
     },
     "mainNav" : {
       "type" : "Group",

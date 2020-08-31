@@ -4,8 +4,8 @@
       <NavBar />
       <nuxt />
       <footer-prismic/>
-    </div>
-    <div hidden id="snipcart" data-api-key="ZGU1MWUxMjYtY2RmYi00MGUxLWE5NTQtMWM1NzFhODhhYzhhNjM3MzQxNzE1NzE3NTg5NDg4"></div>
+    </div><div hidden id="snipcart" data-api-key="{your-api-key}"></div>
+    
   </div>
 </template>
 

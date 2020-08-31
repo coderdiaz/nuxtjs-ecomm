@@ -59,7 +59,7 @@ export default {
   },
 
   prismic: {
-    endpoint: 'https://tdecomm1.cdn.prismic.io/api/v2',
+    endpoint: 'https://your-repo-name.cdn.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
   },
