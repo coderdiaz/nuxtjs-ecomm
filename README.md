@@ -46,10 +46,10 @@ Then you can access it at [http://localhost:3000](http://localhost:3000).
 
 ## Items of Note in this Theme
 
--Info about responsive images from [imgix](https://www.imgix.com)
--I know it seems concerning we are adding an API key for Snipcart that could be find in the javascript, but as per Snipcart: 
+- Info about responsive images from [imgix](https://www.imgix.com)
+- I know it seems concerning we are adding an API key for Snipcart that could be find in the javascript, but as per Snipcart: 
 >"This key can be shared without security issues because it only allows a specific subset of API operations."
--Tailwind CSS
+- Tailwind CSS
 
 ## Launching the project in production
 
