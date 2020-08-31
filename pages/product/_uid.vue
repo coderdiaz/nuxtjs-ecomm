@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import ResponsiveImg from '~/components/ResponsiveImage.vue'
+import ProductImg from '~/components/ProductImage.vue'
 
 export default {
   name: 'product',
@@ -43,7 +43,7 @@ export default {
     }
   },
   components: {
-    ResponsiveImg
+    ProductImg
   },
   head () {
     return {

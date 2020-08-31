@@ -14,7 +14,7 @@
 
 <script>
 import LinkResolver from "~/plugins/link-resolver.js"
-import ProductImg from '~/components/ProductGallery.vue'
+import ProductGallery from '~/components/ProductGallery.vue'
 
 export default {
   props: {

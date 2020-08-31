@@ -11,7 +11,7 @@
 <script>
 // Importing product widget
 import ProductWidget from '~/components/ProductWidget.vue'
-import ResponsiveImg from '~/components/ProductGallery.vue'
+import ProductGallery from '~/components/ProductGallery.vue'
 import ProductImg from '~/components/ProductImage.vue'
 
 export default {
