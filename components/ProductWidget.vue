@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="link">
-    <div class="rounded-t-lg bg-white pt-2 pb-2" v-if="product.data.image.url !== undefined">
+    <div class="rounded-t-lg bg-grey pt-2 pb-2" v-if="product.data.image.url !== undefined">
       <ProductImg :imgobject="product.data.image" class="crop mx-auto"/> 
     </div>
     <div class="pl-4 pr-4 pb-4 pt-4 rounded-lg">

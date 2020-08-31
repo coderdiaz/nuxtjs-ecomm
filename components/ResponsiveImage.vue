@@ -2,6 +2,7 @@
   <ix-img
     :src="imageSrc()"
     :sizes="sizes"
+    :imgixParams="{auto: 'format'}"
     :alt="imgobject.alt"
   />
 </template>

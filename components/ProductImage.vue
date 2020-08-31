@@ -3,11 +3,12 @@
     :src="imageSrc()"
     width="380"
     height="380"
+    :imgixParams="{fit:'fill', fill:'solid', fillcolor:'f7fafc', auto:'format'}"
     :alt="imgobject.alt"
     loading="lazy"
     fixed
+    
   />
-  <!-- imgixParams="{ fit: 'fill', fill: 'solid', fill-color: 'white'}" -->
 </template>
 
 <script>
@@ -17,6 +18,10 @@ export default {
   props: {
     imgobject: {
       type: Object,
+      default: null
+    },
+    imgixParams: {
+      type: String,
       default: null
     }
   },
