@@ -1,7 +1,7 @@
 <template>
   <nuxt-link :to="link">
     <div class="rounded-t-lg bg-grey pt-2 pb-2" v-if="product.data.image.url !== undefined">
-      <ProductImg :imgobject="product.data.image" class="crop mx-auto"/> 
+      <ProductGallery :imgobject="product.data.image" class="crop mx-auto"/> 
     </div>
     <div class="pl-4 pr-4 pb-4 pt-4 rounded-lg">
       <h4 class="mt-1 font-semibold text-base leading-tight truncate text-gray-700">
@@ -14,7 +14,7 @@
 
 <script>
 import LinkResolver from "~/plugins/link-resolver.js"
-import ProductImg from '~/components/ProductImage.vue'
+import ProductImg from '~/components/ProductGallery.vue'
 
 export default {
   props: {
@@ -31,7 +31,7 @@ export default {
   },
   name: 'product-widget',
   components:{
-    ProductImg
+    ProductGallery
   },
   created () {
     this.link = LinkResolver(this.product),

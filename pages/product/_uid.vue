@@ -2,7 +2,7 @@
   <div class="flex justify-center m-6">
     <div v-if="this.document !== null">
       <div class="flex flex-col items-center border rounded-lg bg-blue-100">
-        <ResponsiveImg :imgobject="document.image" sizes="(min-width: 768px) 600px, 90vw"/>
+        <ProductImg :imgobject="document.image" />
       </div>
       <div class="w-full p-5 flex flex-col justify-between">
         <div>

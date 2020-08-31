@@ -1,9 +1,13 @@
 <template>
   <ix-img
     :src="imageSrc()"
-    :sizes="sizes"
-    :imgixParams="{auto: 'format'}"
+    width="380"
+    height="380"
+    :imgixParams="{fit:'fill', fill:'solid', fillcolor:'f7fafc', auto:'format'}"
     :alt="imgobject.alt"
+    loading="lazy"
+    fixed
+    
   />
 </template>
 
@@ -16,12 +20,12 @@ export default {
       type: Object,
       default: null
     },
-    sizes: {
+    imgixParams: {
       type: String,
       default: null
     }
   },
-  name: 'ResponsiveImg',
+  name: 'ProductGallery',
   methods: {
     imageSrc() {
       return (new URL(this.imgobject.url)).pathname

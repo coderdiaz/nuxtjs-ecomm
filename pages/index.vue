@@ -11,14 +11,14 @@
 <script>
 // Importing product widget
 import ProductWidget from '~/components/ProductWidget.vue'
-import ResponsiveImg from '~/components/ResponsiveImage.vue'
+import ResponsiveImg from '~/components/ProductGallery.vue'
 import ProductImg from '~/components/ProductImage.vue'
 
 export default {
   name: 'Home',
   components: {
     ProductWidget,
-    ResponsiveImg,
+    ProductGallery,
     ProductImg
   },
   head () {

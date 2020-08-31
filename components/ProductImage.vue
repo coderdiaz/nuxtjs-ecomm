@@ -1,8 +1,8 @@
 <template>
   <ix-img
     :src="imageSrc()"
-    width="380"
-    height="380"
+    width="580"
+    height="580"
     :imgixParams="{fit:'fill', fill:'solid', fillcolor:'f7fafc', auto:'format'}"
     :alt="imgobject.alt"
     loading="lazy"
