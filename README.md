@@ -1,6 +1,6 @@
 # Nuxt.js imgix Prismic SnipCart Example eComm Site with Responsive Images
 
-> [Nuxt.js](https://nuxtjs.org) example eComm project with responsive images from [imgix](https://www.imgix.com) content managed in [Prismic](https://prismic.io) and shopping cart by [Snipcart](https://snipcart.com)
+[Nuxt.js](https://nuxtjs.org) example eComm project with responsive images from [imgix](https://www.imgix.com) content managed in [Prismic](https://prismic.io) and shopping cart by [Snipcart](https://snipcart.com)
 
 ## An Article is currently in the works...
 
@@ -46,9 +46,10 @@ Then you can access it at [http://localhost:3000](http://localhost:3000).
 
 ## Items of Note in this Theme
 
-Info about responsive images from [imgix](https://www.imgix.com)
-I know it seems concerning we are adding an API key for Snipcart that could be find in the javascript, but as per Snipcart: "This key can be shared without security issues because it only allows a specific subset of API operations."
-Tailwind CSS
+-Info about responsive images from [imgix](https://www.imgix.com)
+-I know it seems concerning we are adding an API key for Snipcart that could be find in the javascript, but as per Snipcart: 
+>"This key can be shared without security issues because it only allows a specific subset of API operations."
+-Tailwind CSS
 
 ## Launching the project in production
 
