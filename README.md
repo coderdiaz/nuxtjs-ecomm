@@ -46,6 +46,8 @@ Launching this in Netflify or Vercel is very easy.  When you are ready to launch
 
 Here is the documentation for deploying [Nuxt](https://nuxtjs.org/faq/netlify-deployment/).
 
+For Snipcart, you also need to update your storeUrl.  
+
 ## Learn more
 
 - Info about responsive images from [imgix](https://www.imgix.com)
