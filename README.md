@@ -40,24 +40,19 @@ npm run dev
 
 Then you can access it at [http://localhost:3000](http://localhost:3000).
 
-## Deploying this site
-
-> To be added..
-
-## Items of Note in this Theme
-
-- Info about responsive images from [imgix](https://www.imgix.com)
-- I know it seems concerning we are adding an API key for Snipcart that could be find in the javascript, but as per Snipcart: 
->"This key can be shared without security issues because it only allows a specific subset of API operations."
-- Tailwind CSS
-
 ## Launching the project in production
 
-> Instructions coming...
+Launching this in Netflify or Vercel is very easy.  When you are ready to launch a production environment, run npm run generate in your terminal.  This will generate a dist folder in your project.  You can then either connect this project to github and deploy from Netlify or just simply drag the dist folder to [NetlifyDrop](https://www.netlify.com/drop).  If connecting from Github, you will be essentially choosing the build command to be npm run generate and the publish directory to be dist.
+
+Here is the documentation for deploying [Nuxt](https://nuxtjs.org/faq/netlify-deployment/).
 
 ## Learn more
 
-> ..
+- Info about responsive images from [imgix](https://www.imgix.com)
+- If you would like to learn more about the imgix Vue SDK that I used, here is the link to that [SDK](https://github.com/imgix/vue-imgix).
+- Snipcart API Key - I know it seems concerning we are adding an API key for Snipcart that could be find in the javascript, but as per Snipcart: 
+>"This key can be shared without security issues because it only allows a specific subset of API operations."
+- Need more examples from Prismic? Here is a great example on making a [blog](https://user-guides.prismic.io/en/articles/2802125-create-a-sample-blog-with-prismic-and-nuxt)
 
 ## Credit
 Credit goes to many poeple and the articles they have written for helping and giving insight. Phil Snow, Edouard Habered, & Renaud Bressand from Prismic, as well as Maxime Laboissonniere at Snipcart, and many other folks.
