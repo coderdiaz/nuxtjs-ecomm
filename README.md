@@ -2,9 +2,10 @@
 
 [Nuxt.js](https://nuxtjs.org) example eComm project with responsive images from [imgix](https://www.imgix.com) content managed in [Prismic](https://prismic.io) and shopping cart by [Snipcart](https://snipcart.com)
 
-## An Article is currently in the works...
+## Explanation article and video
 
-> to be added..
+> An Article is currently in the works...
+[![Vimeo for demo](https://i.vimeocdn.com/video/957602859.jpg?mw=1920&mh=1080&q=70)](https://player.vimeo.com/video/458013155)
 
 
 ## Install Items
