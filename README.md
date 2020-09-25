@@ -47,6 +47,8 @@ Then you can access it at [http://localhost:3000](http://localhost:3000).
 
 Launching this in Netflify or Vercel is very easy.  When you are ready to launch a production environment, run npm run generate in your terminal.  This will generate a dist folder in your project.  You can then either connect this project to github and deploy from Netlify or just simply drag the dist folder to [NetlifyDrop](https://www.netlify.com/drop).  If connecting from Github, you will be essentially choosing the build command to be npm run generate and the publish directory to be dist.
 
+Here is a [Live Example](https://prismic-imgix-nuxt-ecommsample.netlify.app/).
+
 Here is the documentation for deploying [Nuxt](https://nuxtjs.org/faq/netlify-deployment/).
 
 For Snipcart, you also need to update your storeUrl.  
